@@ -16,23 +16,23 @@
     $obj = json_decode($json);
 
 
-    $moneyManager = new moneyManager();
+    $planner = new planner();
 
     switch($_GET['api']) {
         case 'newUserRegistration':
-            print_r(json_encode($moneyManager->newUserRegistration($obj)));
+            print_r(json_encode($planner->newUserRegistration($obj)));
             break;
 
         case 'login':
-            print_r(json_encode($moneyManager->login($obj)));
+            print_r(json_encode($planner->login($obj)));
             break;
 
         case 'forgotPassword':
-            print_r(json_encode($moneyManager->forgotPassword($obj)));
+            print_r(json_encode($planner->forgotPassword($obj)));
             break;
 
         case 'logout':
-            print_r(json_encode($moneyManager->logout($obj)));
+            print_r(json_encode($planner->logout($obj)));
             break;
     }
 ?>
