@@ -82,11 +82,11 @@
 
                         if(!in_array($_SERVER['REMOTE_ADDR'], $GLOBALS['whitelist'])) {
 
-                            $subject = "BigJApps - Money Manager: New User Registration";
+                            $subject = "BigJApps - Planner: New User Registration";
 
                             $message = "<b>New user is: " . $newUserObj->user->email . "</b>";
 
-                            $header = "From:moneymanager@bigjapps.com \r\n";
+                            $header = "From:planner@bigjapps.com \r\n";
                             $header .= "MIME-Version: 1.0\r\n";
                             $header .= "Content-type: text/html\r\n";
 
