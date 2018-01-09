@@ -15,7 +15,6 @@
     $json = file_get_contents('php://input');
     $obj = json_decode($json);
 
-
     $planner = new planner();
 
     switch($_GET['api']) {
