@@ -8,7 +8,7 @@
     $dbHost     = "localhost";
     $dbUsername = "root";
     $dbPassword = "";
-    $dbName     = "bigjapps_planner";
+    $dbName     = "bigjapps_reminder";
     $whitelist = array(
         '127.0.0.1',
         '::1'
@@ -18,11 +18,11 @@
     	$dbHost     = "localhost";
 	    $dbUsername = "bigjapps_admin";
 	    $dbPassword = "asdASD123!@#";
-	    $dbName     = "bigjapps_planner";
+	    $dbName     = "bigjapps_reminder";
     }
 
     require('./config/dbConfig.php');
     require('./config/validations.php');
     require('./config/miscMethods.php');
-    require('./api/moneyManager.php');
+    require('./api/reminder.php');
 ?>

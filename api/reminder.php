@@ -1,5 +1,5 @@
 <?php
-    class planner {
+    class reminder {
         function newUserRegistration($newUserObj) {
             require('./api/newUserRegistration.php');
             return $returnObj;
@@ -20,13 +20,13 @@
             return $returnObj;
         }
 
-        function savePlans($plansObj) {
-            require('./api/savePlans.php');
+        function saveReminders($reminderObj) {
+            require('./api/saveReminders.php');
             return $returnObj;
         }
 
-        function getPlans($plansObj) {
-            require('./api/getPlans.php');
+        function getReminders($reminderObj) {
+            require('./api/saveReminders.php');
             return $returnObj;
         }
     }

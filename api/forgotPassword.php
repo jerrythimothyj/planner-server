@@ -46,11 +46,11 @@
 
                 if(!in_array($_SERVER['REMOTE_ADDR'], $GLOBALS['whitelist'])) {
         	        $to = $_SESSION['users_email'];
-                    $subject = "BigJApps - Planner: Password Retrieval";
+                    $subject = "BigJApps - Reminder: Password Retrieval";
 
                     $message = "<b>Your password is: " . $password . "</b>";
 
-                    $header = "From:planner@bigjapps.com \r\n";
+                    $header = "From:noreply@bigjapps.com \r\n";
                     $header .= "MIME-Version: 1.0\r\n";
                     $header .= "Content-type: text/html\r\n";
 

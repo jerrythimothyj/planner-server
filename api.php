@@ -15,23 +15,23 @@
     $json = file_get_contents('php://input');
     $obj = json_decode($json);
 
-    $planner = new planner();
+    $reminder = new reminder();
 
     switch($_GET['api']) {
         case 'newUserRegistration':
-            print_r(json_encode($planner->newUserRegistration($obj)));
+            print_r(json_encode($reminder->newUserRegistration($obj)));
             break;
 
         case 'login':
-            print_r(json_encode($planner->login($obj)));
+            print_r(json_encode($reminder->login($obj)));
             break;
 
         case 'forgotPassword':
-            print_r(json_encode($planner->forgotPassword($obj)));
+            print_r(json_encode($reminder->forgotPassword($obj)));
             break;
 
         case 'logout':
-            print_r(json_encode($planner->logout($obj)));
+            print_r(json_encode($reminder->logout($obj)));
             break;
     }
 ?>
