@@ -33,5 +33,9 @@
         case 'logout':
             print_r(json_encode($reminder->logout($obj)));
             break;
+
+        case 'saveReminders':
+            print_r(json_encode($reminder->saveReminders($obj)));
+            break;
     }
 ?>

@@ -26,7 +26,7 @@
         }
 
         function getReminders($reminderObj) {
-            require('./api/saveReminders.php');
+            require('./api/getReminders.php');
             return $returnObj;
         }
     }
